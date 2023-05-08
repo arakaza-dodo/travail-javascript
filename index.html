@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>travail</title>
+</head>
+<body>
+   <script>
+    let tableau=[20,-20,10,40,0,3,2]
+    function noSort(array){
+        var fini=false
+        while(!fini){
+            fini=true
+            for(var i=1; i<array.length; i++){
+            if(array[i-1]>array[i]){
+                fini=false
+                var box=array[i-1]
+                array[i-1]=array[i]
+                array[i]=box
+            }
+        }
+    }
+    return array
+    }
+</script>
+</body>
+</html>
